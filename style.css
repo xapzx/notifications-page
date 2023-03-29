@@ -18,3 +18,13 @@
     --fw-regular: 500;
     --fw-bold: 800;
 }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-neutral-grayish-blue-100);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-base);
+    color: var(--clr-neutral-grayish-blue-600);
+}
