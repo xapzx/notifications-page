@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
     display: grid;
     place-content: center;
-    background-color: var(--clr-neutral-grayish-blue-100);
+    background-color: var(--clr-neutral-white);
     color: var(--clr-neutral-grayish-blue-600);
     font-family: var(--ff-primary);
     font-size: var(--fs-base);
@@ -32,6 +32,7 @@ body {
 
 @media (min-width: 1200px) {
     body {
+        background-color: var(--clr-neutral-grayish-blue-100);
         padding: 4rem 22rem;
     }
 
@@ -88,7 +89,7 @@ body {
 }
 
 .unread {
-    background-color: var(--clr-neutral-grayish-blue-200);
+    background-color: var(--clr-neutral-grayish-blue-100);
     border-radius: 0.5rem;
 }
 
@@ -122,6 +123,11 @@ body {
     padding-right: 0.2rem;
 }
 
+.user:hover, .post-title:hover, .group-title:hover, .mark-read:hover {
+    color: var(--clr-primary-blue);
+    cursor: pointer;
+}
+
 .duration {
     color: var(--clr-neutral-grayish-blue-400);
 }
@@ -145,11 +151,16 @@ body {
 }
 
 .message {
-    border: 1px solid var(--clr-neutral-grayish-blue-300);
+    border: 1px solid var(--clr-neutral-grayish-blue-200);
     border-radius: 4px;
     padding: 1rem;
     margin-top: 0.7rem;
     line-height: 1.125rem;
+}
+
+.message:hover {
+    background-color: var(--clr-neutral-grayish-blue-200);
+    cursor: pointer;
 }
 
 /* Picture comment */
@@ -161,6 +172,12 @@ body {
     grid-column: -2;
     grid-row: 1 / -1;
     width: 2.5rem;
+}
+
+.embbed-img:hover {
+    border: 2px solid var(--clr-neutral-grayish-blue-300);
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 @media (min-width: 1200px) {
