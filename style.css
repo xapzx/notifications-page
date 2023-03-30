@@ -111,3 +111,27 @@ body {
     color: var(--clr-primary-blue);
     font-weight: var(--fw-bold);
 }
+
+/* Private messages styling */
+.private-msg {
+    grid-template-rows: auto auto 1fr;
+}
+
+.message {
+    border: 1px solid var(--clr-neutral-grayish-blue-300);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 0.7rem;
+    line-height: 1.125rem;
+}
+
+/* Picture comment */
+.comment-picture {
+    grid-template-columns: auto 1fr auto;
+}
+
+.embbed-img {
+    grid-column: -2;
+    grid-row: 1 / -1;
+    width: 2.5rem;
+}
