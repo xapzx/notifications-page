@@ -24,7 +24,36 @@ body {
     display: grid;
     place-content: center;
     background-color: var(--clr-neutral-grayish-blue-100);
+    color: var(--clr-neutral-grayish-blue-600);
     font-family: var(--ff-primary);
     font-size: var(--fs-base);
-    color: var(--clr-neutral-grayish-blue-600);
+    padding: 1.2rem 1rem;
+}
+
+.title-wrapper {
+    margin-bottom: 1rem;
+}
+
+.notifications-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: var(--clr-neutral-dark-blue);
+    font-size: 1.2rem;
+}
+
+.notification-unread {
+    background-color: var(--clr-primary-blue);
+    color: var(--clr-neutral-white);
+    padding: 0.1rem 0.65rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.mark-read {
+    font-size: 0.85rem;
 }
